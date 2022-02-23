@@ -16,7 +16,17 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="#">BLUE Technology</a>
+            <a class="navbar-brand" href="#">
+                @if (IsSectionDefined("LogoPagina"))
+                {
+                    @RenderSection("LogoPagina", false)
+                }
+                else
+                {
+                    <img src="/img/pagina.png" height="24" class="d-inline-block align-text-bottom">
+                }
+                BLUE Technology
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
                 <span class="navbar-toggler-icon"></span>
             </button>
