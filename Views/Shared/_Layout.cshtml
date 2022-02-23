@@ -34,7 +34,12 @@
         @RenderBody()
     </div>
 
-    <script src="/lib/bootstrap5/dist/js/bootstrap.js"></script>
+    <div class="text-light bg-dark p-3 fixed-bottom text-center">
+        Todos os direitos Reservados.br<br>
+        @RenderSection("Footer", false)
+    </div>
+
+    @RenderSection("Scripts", false)
 </body>
 
 </html>
