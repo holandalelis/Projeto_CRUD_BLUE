@@ -11,11 +11,17 @@
     var excluiu = (bool)TempData["Excluiu"];
     if(excluiu)
     {
-        <h5>Usuário excluído com Sucesso.</h5>
+        <div class="alert alert-success mt-3 alert-dismissible fade show" role="alert">
+            <strong>Contato excluído com sucesso.</strong>
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
     }
     else
     {
-        <h5>Não foi possível excluir o usuário.</h5>
+         <div class="alert alert-warning mt-3 alert-dismissible fade show" role="alert">
+            <strong>Não foi possível excluir o contato.</strong>
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
     }
 }
 <table class="table">
