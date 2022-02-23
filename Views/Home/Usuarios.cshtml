@@ -6,6 +6,18 @@
 <h1 class="text-primary">Contatos</h1>
 <hr>
 <a href="/Home/Cadastrar" class="btn btn-primary">Novo Contato</a>
+@if (TempData.ContainsKey("Excluiu"))
+{
+    var excluiu = (bool)TempData["Excluiu"];
+    if(excluiu)
+    {
+        <h5>Usuário excluído com Sucesso.</h5>
+    }
+    else
+    {
+        <h5>Não foi possível excluir o usuário.</h5>
+    }
+}
 <table class="table">
     <thead>
         <tr>
