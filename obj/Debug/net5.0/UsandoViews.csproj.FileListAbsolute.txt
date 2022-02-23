@@ -327,7 +327,7 @@ C:\Users\pedro\Desktop\CRUD_TESTE_BLUE\ProjetoAgenda\bin\Debug\net5.0\ru\Microso
 C:\Users\pedro\Desktop\CRUD_TESTE_BLUE\ProjetoAgenda\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
 C:\Users\pedro\Desktop\CRUD_TESTE_BLUE\ProjetoAgenda\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
 C:\Users\pedro\Desktop\CRUD_TESTE_BLUE\ProjetoAgenda\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\pedro\Desktop\CRUD_TESTE_BLUE\ProjetoAgenda\obj\Debug\net5.0\UsandoViews.csprojAssemblyReference.cache
+C:\Users\pedro\Desktop\CRUD_TESTE_BLUE\ProjetoAgenda\obj\Debug\net5.0\UsandoViews.csproj.AssemblyReference.cache
 C:\Users\pedro\Desktop\CRUD_TESTE_BLUE\ProjetoAgenda\obj\Debug\net5.0\UsandoViews.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\pedro\Desktop\CRUD_TESTE_BLUE\ProjetoAgenda\obj\Debug\net5.0\UsandoViews.AssemblyInfoInputs.cache
 C:\Users\pedro\Desktop\CRUD_TESTE_BLUE\ProjetoAgenda\obj\Debug\net5.0\UsandoViews.AssemblyInfo.cs
@@ -346,6 +346,9 @@ C:\Users\pedro\Desktop\CRUD_TESTE_BLUE\ProjetoAgenda\obj\Debug\net5.0\Razor\View
 C:\Users\pedro\Desktop\CRUD_TESTE_BLUE\ProjetoAgenda\obj\Debug\net5.0\Razor\Views\Home\Excluir.cshtml.g.cs
 C:\Users\pedro\Desktop\CRUD_TESTE_BLUE\ProjetoAgenda\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\pedro\Desktop\CRUD_TESTE_BLUE\ProjetoAgenda\obj\Debug\net5.0\Razor\Views\Home\Usuarios.cshtml.g.cs
+C:\Users\pedro\Desktop\CRUD_TESTE_BLUE\ProjetoAgenda\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\pedro\Desktop\CRUD_TESTE_BLUE\ProjetoAgenda\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\pedro\Desktop\CRUD_TESTE_BLUE\ProjetoAgenda\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
 C:\Users\pedro\Desktop\CRUD_TESTE_BLUE\ProjetoAgenda\obj\Debug\net5.0\UsandoViews.RazorTargetAssemblyInfo.cache
 C:\Users\pedro\Desktop\CRUD_TESTE_BLUE\ProjetoAgenda\obj\Debug\net5.0\UsandoViews.RazorTargetAssemblyInfo.cs
 C:\Users\pedro\Desktop\CRUD_TESTE_BLUE\ProjetoAgenda\obj\Debug\net5.0\UsandoViews.Views.pdb

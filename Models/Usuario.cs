@@ -22,15 +22,15 @@ namespace UsandoViews.Models
         static Usuario()
         {
             Usuario.listagem.Add(
-                new Usuario {IdUsuario = 1, Nome = "Luciano", Email = "Luciano@email.com", Telefone = "81 99999-9999"});
+                new Usuario {IdUsuario = 1, Nome = "Luciano", Email = "luciano@email.com", Telefone = "81 99999-9999"});
             Usuario.listagem.Add(
-                new Usuario {IdUsuario = 2, Nome = "Emerson", Email = "Emerson@email.com", Telefone = "81 88888-9999"});
+                new Usuario {IdUsuario = 2, Nome = "Emerson", Email = "emerson@email.com", Telefone = "81 98888-8888"});
             Usuario.listagem.Add(
-                new Usuario {IdUsuario = 3, Nome = "Pedro", Email = "pedro@email.com", Telefone = "81 99555-5555"});
+                new Usuario {IdUsuario = 3, Nome = "Pedro", Email = "pedro@email.com", Telefone = "81 97777-7777"});
             Usuario.listagem.Add(
-                new Usuario {IdUsuario = 4, Nome = "João", Email = "joao@email.com", Telefone = "81 99444-4444"});
+                new Usuario {IdUsuario = 4, Nome = "João", Email = "joao@email.com", Telefone = "81 96666-6666"});
             Usuario.listagem.Add(
-                new Usuario {IdUsuario = 5, Nome = "Maria", Email = "maria@email.com", Telefone = "81 99777-7777"});  
+                new Usuario {IdUsuario = 5, Nome = "Maria", Email = "maria@email.com", Telefone = "81 95555-5555"});  
         }
 
         public static void Salvar(Usuario usuario)

@@ -6,17 +6,18 @@ namespace UsandoViews.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Index()
+        public IActionResult Index()     
         {
+            ViewBag.QtdeUsuarios = Usuario.Listagem.Count();
             return View();
         }
 
         [HttpGet]
         public IActionResult Cadastrar(int? id)
-        {                                  
+        {
             if (id.HasValue && Usuario.Listagem.Any(u => u.IdUsuario == id))
             {
-                var usuario = Usuario.Listagem.Single(u => u.IdUsuario == id); 
+                var usuario = Usuario.Listagem.Single(u => u.IdUsuario == id);
                 return View(usuario);
             }
             return View();
@@ -36,10 +37,10 @@ namespace UsandoViews.Controllers
 
         [HttpGet]
         public IActionResult Excluir(int? id)
-        {                                  
+        {
             if (id.HasValue && Usuario.Listagem.Any(u => u.IdUsuario == id))
             {
-                var usuario = Usuario.Listagem.Single(u => u.IdUsuario == id); 
+                var usuario = Usuario.Listagem.Single(u => u.IdUsuario == id);
                 return View(usuario);
             }
             return RedirectToAction("Usuarios");
@@ -47,7 +48,7 @@ namespace UsandoViews.Controllers
 
         [HttpPost]
         public IActionResult Excluir(Usuario usuario)
-        {                                  
+        {
             Usuario.Excluir(usuario.IdUsuario);
             return RedirectToAction("Usuarios");
         }

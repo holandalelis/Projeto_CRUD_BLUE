@@ -15624,6 +15624,16 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\pedro\\Desktop\\CRUD_TESTE_BLUE\\ProjetoAgenda\\Views\\_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\pedro\\Desktop\\CRUD_TESTE_BLUE\\ProjetoAgenda\\Views\\_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\pedro\\Desktop\\CRUD_TESTE_BLUE\\ProjetoAgenda\\Views\\Home\\Excluir.cshtml",
       "TargetPath": "Views\\Home\\Excluir.cshtml",
       "FileKind": "mvc"
