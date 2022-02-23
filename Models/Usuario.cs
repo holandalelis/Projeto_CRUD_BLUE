@@ -22,9 +22,9 @@ namespace UsandoViews.Models
         static Usuario()
         {
             Usuario.listagem.Add(
-                new Usuario {IdUsuario = 1, Nome = "Luciano", Email = "fulano@email.com", Telefone = "81 99999-9999"});
+                new Usuario {IdUsuario = 1, Nome = "Luciano", Email = "Luciano@email.com", Telefone = "81 99999-9999"});
             Usuario.listagem.Add(
-                new Usuario {IdUsuario = 2, Nome = "Emerson", Email = "sicrano@email.com", Telefone = "81 88888-9999"});
+                new Usuario {IdUsuario = 2, Nome = "Emerson", Email = "Emerson@email.com", Telefone = "81 88888-9999"});
             Usuario.listagem.Add(
                 new Usuario {IdUsuario = 3, Nome = "Pedro", Email = "pedro@email.com", Telefone = "81 99555-5555"});
             Usuario.listagem.Add(
