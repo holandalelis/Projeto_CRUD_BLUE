@@ -30,7 +30,9 @@ namespace UsandoViews.Models
             Usuario.listagem.Add(
                 new Usuario {IdUsuario = 4, Nome = "João", Email = "joao@email.com", Telefone = "81 96666-6666"});
             Usuario.listagem.Add(
-                new Usuario {IdUsuario = 5, Nome = "Maria", Email = "maria@email.com", Telefone = "81 95555-5555"});  
+                new Usuario {IdUsuario = 5, Nome = "Maria", Email = "maria@email.com", Telefone = "81 95555-5555"});
+            Usuario.listagem.Add(
+                new Usuario {IdUsuario = 6, Nome = "TESTE", Email = "TESTE@email.com", Telefone = "81 9TESTE"});    
         }
 
         public static void Salvar(Usuario usuario)
