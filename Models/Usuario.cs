@@ -1,13 +1,18 @@
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 
 namespace UsandoViews.Models
 {
     public class Usuario
     {
+        [Key]
         public int IdUsuario { get; set; }
+        [Required, MaxLength(100)]
         public string Nome { get; set; }
+        [Required, MaxLength(100)]
         public string Email { get; set; }
+        [Required, MaxLength(100)]
         public string Telefone { get; set; }
 
         private static List<Usuario> listagem = new List<Usuario>();
