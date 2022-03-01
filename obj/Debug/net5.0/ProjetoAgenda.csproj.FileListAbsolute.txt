@@ -385,3 +385,6 @@ C:\Users\pedro\Desktop\CRUD_TESTE_BLUE\ProjetoAgenda\bin\Debug\net5.0\agenda.db
 C:\Users\pedro\Desktop\CRUD_TESTE_BLUE\ProjetoAgenda\obj\Debug\net5.0\Razor\Views\Grupo\Index.cshtml.g.cs
 C:\Users\pedro\Desktop\CRUD_TESTE_BLUE\ProjetoAgenda\obj\Debug\net5.0\Razor\Views\Grupo\Cadastrar.cshtml.g.cs
 C:\Users\pedro\Desktop\CRUD_TESTE_BLUE\ProjetoAgenda\obj\Debug\net5.0\Razor\Views\Grupo\Excluir.cshtml.g.cs
+C:\Users\pedro\Desktop\CRUD_TESTE_BLUE\ProjetoAgenda\obj\Debug\net5.0\Razor\Views\Usuario\Index.cshtml.g.cs
+C:\Users\pedro\Desktop\CRUD_TESTE_BLUE\ProjetoAgenda\obj\Debug\net5.0\Razor\Views\Usuario\Cadastrar.cshtml.g.cs
+C:\Users\pedro\Desktop\CRUD_TESTE_BLUE\ProjetoAgenda\obj\Debug\net5.0\Razor\Views\Usuario\Excluir.cshtml.g.cs

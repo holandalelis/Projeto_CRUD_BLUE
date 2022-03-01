@@ -16,9 +16,9 @@ namespace ProjetoAgenda
         public string Telefone {get;set;}
 
         [ForeignKey("Grupo")]
-        public string IdGrupo {get;set;}
+        public int IdGrupo {get;set;}
 
-        public GrupoModel grupo {get;set;}
+        public GrupoModel Grupo {get;set;}
 
     }
 }

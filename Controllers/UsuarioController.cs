@@ -18,13 +18,13 @@ namespace ProjetoAgenda.Controllers
 
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Usuario.OrderBy(x => x.Nome).Include(x => x.grupo).AsNoTracking().ToListAsync());
+            return View(await _context.Usuario.OrderBy(x => x.Nome).Include(x => x.Grupo).AsNoTracking().ToListAsync());
         }
         [HttpGet]
         public async Task<IActionResult> Cadastrar(int? id)
         {
-            var grupo = _context.Grupo.OrderBy(x => x.Nome).AsNoTracking().ToList();
-            var grupoSelectList = new SelectList(grupo, nameof(GrupoModel.IdGrupo), nameof(GrupoModel.Nome));
+            var Grupo = _context.Grupo.OrderBy(x => x.Nome).AsNoTracking().ToList();
+            var grupoSelectList = new SelectList(Grupo, nameof(GrupoModel.IdGrupo), nameof(GrupoModel.Nome));
             ViewBag.Grupo = grupoSelectList;
             if (id.HasValue)
             {
@@ -115,13 +115,12 @@ namespace ProjetoAgenda.Controllers
                     TempData["mensagem"] = MensagemModel.Serializar("Usuario excluído com sucesso.");
                 else
                     TempData["mensagem"] = MensagemModel.Serializar("Não foi possível excluir o Usuario.", TipoMensagem.Erro);
-                return RedirectToAction(nameof(Index));
             }
             else
             {
                 TempData["mensagem"] = MensagemModel.Serializar("Usuario não encontrado.", TipoMensagem.Erro);
-                return RedirectToAction(nameof(Index));
             }
+            return RedirectToAction(nameof(Index));
         }
     }
 }
