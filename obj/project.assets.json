@@ -1741,9 +1741,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\pedro\\Desktop\\CRUD_TESTE_BLUE\\ProjetoAgenda\\UsandoViews.csproj",
-      "projectName": "UsandoViews",
-      "projectPath": "c:\\Users\\pedro\\Desktop\\CRUD_TESTE_BLUE\\ProjetoAgenda\\UsandoViews.csproj",
+      "projectUniqueName": "c:\\Users\\pedro\\Desktop\\CRUD_TESTE_BLUE\\ProjetoAgenda\\ProjetoAgenda.csproj",
+      "projectName": "ProjetoAgenda",
+      "projectPath": "c:\\Users\\pedro\\Desktop\\CRUD_TESTE_BLUE\\ProjetoAgenda\\ProjetoAgenda.csproj",
       "packagesPath": "C:\\Users\\pedro\\.nuget\\packages\\",
       "outputPath": "c:\\Users\\pedro\\Desktop\\CRUD_TESTE_BLUE\\ProjetoAgenda\\obj\\",
       "projectStyle": "PackageReference",
@@ -1813,7 +1813,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
       }
     }
   }

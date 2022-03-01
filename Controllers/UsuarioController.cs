@@ -1,85 +1,89 @@
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using UsandoViews.Models;
+using ProjetoAgenda.Models;
 
-namespace UsandoViews.Controllers
+namespace ProjetoAgenda.Controllers
 {
     public class UsuarioController : Controller
     {
-        private readonly UsuariosContext _context;
+        private readonly ArmazenamentoWebContext _context; 
 
-        public UsuarioController(UsuariosContext context)
+        public UsuarioController(ArmazenamentoWebContext context)
         {
             this._context = context;
         }
 
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Users.OrderBy(x => x.Nome).AsNoTracking().ToListAsync());
+            return View(await _context.Usuario.OrderBy(x => x.Nome).Include(x => x.grupo).AsNoTracking().ToListAsync());
         }
-        /*[HttpGet]
+        [HttpGet]
         public async Task<IActionResult> Cadastrar(int? id)
         {
+            var grupo = _context.Grupo.OrderBy(x => x.Nome).AsNoTracking().ToList();
+            var grupoSelectList = new SelectList(grupo, nameof(GrupoModel.IdGrupo), nameof(GrupoModel.Nome));
+            ViewBag.Grupo = grupoSelectList;
             if (id.HasValue)
             {
-                var user = await _context.Users.FindAsync(id);
-                if (user == null)
+                var usuario = await _context.Usuario.FindAsync(id);
+                if (usuario == null)
                 {
                     return NotFound();
                 }
-                return View(user);
+                return View(usuario);
             }
-            return View(new Usuario());
+            return View(new UsuarioModel());
         }
 
         private bool UsuarioExiste(int id)
         {
-            return _context.Users.Any(x => x.IdUsuario == id);
+            return _context.Usuario.Any(x => x.IdUsuario == id);
         }
 
         [HttpPost]
-        public async Task<IActionResult> Cadastrar(int? id, [FromForm] Usuario user)
+        public async Task<IActionResult> Cadastrar(int? id,[FromForm] UsuarioModel usuario)
         {
             if (ModelState.IsValid)
             {
                 if (id.HasValue)
                 {
-                    if (UsuarioExiste(id.Value))
+                    if(UsuarioExiste(id.Value))
                     {
-                        _context.Users.Update(user);
-                        if (await _context.SaveChangesAsync() > 0)
+                        _context.Update(usuario);
+                        if(await _context.SaveChangesAsync()>0)
                         {
-                            TempData["mensagem"] = MensagemModel.Serializar("Usuário alterado com sucesso.");
+                            TempData["mensagem"] = MensagemModel.Serializar("Usuario alterado com Sucesso.");
                         }
                         else
                         {
-                            TempData["mensagem"] = MensagemModel.Serializar("Erro ao alterar Usuário.", TipoMensagem.Erro);
+                            TempData["mensagem"] = MensagemModel.Serializar("Erro na alteração do Usuario.", TipoMensagem.Erro);
                         }
                     }
                     else
                     {
-                        TempData["mensagem"] = MensagemModel.Serializar("Usuário não encontrado.", TipoMensagem.Erro);
+                        TempData["mensagem"] = MensagemModel.Serializar("Usuario não encontrado.", TipoMensagem.Erro);
                     }
                 }
                 else
                 {
-                    _context.Users.Add(user);
-                    if (await _context.SaveChangesAsync() > 0)
+                    _context.Add(usuario);
+                    if (await _context.SaveChangesAsync() >0)
                     {
-                        TempData["mensagem"] = MensagemModel.Serializar("Usuário cadastrado com sucesso.");
+                        TempData["mensagem"] = MensagemModel.Serializar("Usuario Cadastrado!");
                     }
                     else
                     {
-                        TempData["mensagem"] = MensagemModel.Serializar("Erro ao cadastrar Usuário.", TipoMensagem.Erro);
+                        TempData["mensagem"] = MensagemModel.Serializar("Erro ao cadastrar Usuario.", TipoMensagem.Erro);
                     }
                 }
                 return RedirectToAction(nameof(Index));
             }
             else
             {
-                return View(user);
+                return View(usuario);
             }
         }
 
@@ -88,38 +92,36 @@ namespace UsandoViews.Controllers
         {
             if (!id.HasValue)
             {
-                TempData["mensagem"] = MensagemModel.Serializar("Usuário não informado.", TipoMensagem.Erro);
+                TempData["mensagem"] = MensagemModel.Serializar("Usuario não informado.", TipoMensagem.Erro);
                 return RedirectToAction(nameof(Index));
             }
-
-            var user = await _context.Users.FindAsync(id);
-            if (user == null)
+            var usuario = await _context.Usuario.FindAsync(id);
+            if (usuario == null)
             {
-                TempData["mensagem"] = MensagemModel.Serializar("Categoria não encontrada.", TipoMensagem.Erro);
+                TempData["mensagem"] = MensagemModel.Serializar("Usuario não encontrado.", TipoMensagem.Erro);
                 return RedirectToAction(nameof(Index));
             }
-
-            return View(user);
+            return View(usuario);
         }
 
         [HttpPost]
         public async Task<IActionResult> Excluir(int id)
         {
-            var user = await _context.Users.FindAsync(id);
-            if (user != null)
+            var usuario = await _context.Usuario.FindAsync(id);
+            if (usuario != null)
             {
-                _context.Users.Remove(user);
+                _context.Usuario.Remove(usuario);
                 if (await _context.SaveChangesAsync() > 0)
-                    TempData["mensagem"] = MensagemModel.Serializar("Usuário excluído com sucesso.");
+                    TempData["mensagem"] = MensagemModel.Serializar("Usuario excluído com sucesso.");
                 else
-                    TempData["mensagem"] = MensagemModel.Serializar("Não foi possível excluir o Usuário.", TipoMensagem.Erro);
+                    TempData["mensagem"] = MensagemModel.Serializar("Não foi possível excluir o Usuario.", TipoMensagem.Erro);
                 return RedirectToAction(nameof(Index));
             }
             else
             {
-                TempData["mensagem"] = MensagemModel.Serializar("Usuário não encontrado.", TipoMensagem.Erro);
+                TempData["mensagem"] = MensagemModel.Serializar("Usuario não encontrado.", TipoMensagem.Erro);
                 return RedirectToAction(nameof(Index));
             }
-        }*/
+        }
     }
 }

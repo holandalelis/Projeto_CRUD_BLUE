@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\pedro\\Desktop\\CRUD_TESTE_BLUE\\ProjetoAgenda\\UsandoViews.csproj",
+  "FilePath": "c:\\Users\\pedro\\Desktop\\CRUD_TESTE_BLUE\\ProjetoAgenda\\ProjetoAgenda.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "5.0",
@@ -15616,11 +15616,11 @@
     ],
     "CSharpLanguageVersion": 900
   },
-  "RootNamespace": "UsandoViews",
+  "RootNamespace": "ProjetoAgenda",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\pedro\\Desktop\\CRUD_TESTE_BLUE\\ProjetoAgenda\\Views\\Home\\Cadastrar.cshtml",
-      "TargetPath": "Views\\Home\\Cadastrar.cshtml",
+      "FilePath": "c:\\Users\\pedro\\Desktop\\CRUD_TESTE_BLUE\\ProjetoAgenda\\Views\\Grupo\\Index.cshtml",
+      "TargetPath": "Views\\Grupo\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15639,18 +15639,18 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\pedro\\Desktop\\CRUD_TESTE_BLUE\\ProjetoAgenda\\Views\\Home\\Excluir.cshtml",
-      "TargetPath": "Views\\Home\\Excluir.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\pedro\\Desktop\\CRUD_TESTE_BLUE\\ProjetoAgenda\\Views\\Home\\Usuarios.cshtml",
-      "TargetPath": "Views\\Home\\Usuarios.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "c:\\Users\\pedro\\Desktop\\CRUD_TESTE_BLUE\\ProjetoAgenda\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\pedro\\Desktop\\CRUD_TESTE_BLUE\\ProjetoAgenda\\Views\\Grupo\\Excluir.cshtml",
+      "TargetPath": "Views\\Grupo\\Excluir.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\pedro\\Desktop\\CRUD_TESTE_BLUE\\ProjetoAgenda\\Views\\Grupo\\Cadastrar.cshtml",
+      "TargetPath": "Views\\Grupo\\Cadastrar.cshtml",
       "FileKind": "mvc"
     },
     {

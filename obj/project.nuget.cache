@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "K39uxefP0tWprIJK1ug+QT7eR3+hx6XjwJHxjNqoacZHFn3aOKaSe4vOIfTKP1nigrHtozFwiEi/InfVr1q3hA==",
+  "dgSpecHash": "yOuXcev40GeppUcwxLgkvmIvU0sWgHZg3O9kxkzjTf7ysPVy96yaneCqUSubORxi2pjOTs6UU+JC97IN1yghog==",
   "success": true,
-  "projectFilePath": "C:\\Users\\pedro\\Desktop\\CRUD_TESTE_BLUE\\ProjetoAgenda\\UsandoViews.csproj",
+  "projectFilePath": "C:\\Users\\pedro\\Desktop\\CRUD_TESTE_BLUE\\ProjetoAgenda\\ProjetoAgenda.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pedro\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\pedro\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.extensions\\5.0.9\\microsoft.aspnetcore.mvc.razor.extensions.5.0.9.nupkg.sha512",

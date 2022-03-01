@@ -1,0 +1,7 @@
+.tabela-grupos tr > th:last-child,
+.tabela-grupos tr > td:last-child
+{
+    width: 1%;
+    white-space: nowrap;
+    text-align: right;
+}

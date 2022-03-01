@@ -1,6 +1,6 @@
 using Newtonsoft.Json;
 
-namespace UsandoViews.Models
+namespace ProjetoAgenda.Models
 {
     public enum TipoMensagem
     {
@@ -10,12 +10,12 @@ namespace UsandoViews.Models
 
     public class MensagemModel
     {
-        public TipoMensagem Tipo { get; set; }
-        public string Texto { get; set; }
+        public TipoMensagem Tipo {get;set;}
+        public string Texto{get;set;}
         public MensagemModel(string mensagem, TipoMensagem tipo = TipoMensagem.Informacao)
         {
-            this.Tipo = tipo;
-            this.Texto = mensagem;
+            this.Tipo=tipo;
+            this.Texto=mensagem;
         }
 
         public static string Serializar(string mensagem, TipoMensagem tipo = TipoMensagem.Informacao)
