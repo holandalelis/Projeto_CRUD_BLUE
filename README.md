@@ -1,5 +1,8 @@
-#Olá, este é meu projeto de Agenda de Contatos, realizado para uma entrevista de emprego, na vaga de estagiário.
-Tecnologias utilizadas:
+### Olá, este é meu projeto de ***Agenda de Contatos!***
+#### Esta aplicação foi realizada para uma entrevista de emprego, na vaga de estagiário.
+
+Tecnologias utilizadas na aplicação:
+
 ✔️C#
 ✔️ASP.NET Core 5
 ✔️EntityFramework Core 5
